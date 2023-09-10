@@ -1,5 +1,5 @@
 /* 
-Colores
+Colores:
 
 .color1 { #ebf2f2 };
 .color2 { #d9dbdb }; 
@@ -85,8 +85,6 @@ body {
     text-align: center; /* Alineación del texto en el centro */
 }
 
-/* Sobre Fluna */
-
 /* Contacto */
 #contenedor-formulario {
     background: #ebf2f2; /* Color de fondo del contenedor del formulario */
@@ -132,5 +130,3 @@ footer p {
     color: #000; /* Color de los iconos */
     padding: 0 8px; /* Espacio de relleno horizontal para los iconos */
 }
-
-
