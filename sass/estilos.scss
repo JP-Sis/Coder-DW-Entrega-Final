@@ -1,0 +1,123 @@
+//Comentario
+
+@import "partials/variables.scss";
+@import "partials/header.scss";
+@import "partials/index.scss";
+@import "partials/footer.scss";
+
+// Partials de media query siempre debe ir ultimo
+
+@import "partials/mediaQ.scss";
+
+
+
+// Colores y Formatos
+
+nav {
+    background-color: $color1; // Color de fondo de la barra de navegación
+    text-decoration: none; // Elimina el subrayado del enlace (nota: esta línea no tiene efecto en una etiqueta <nav>)
+    
+    a:link {
+        text-decoration: none; // Elimina la subrayado del enlace
+        color: inherit; // Utiliza el color del texto actual
+        cursor: pointer; // Cambia el cursor a una mano cuando se pasa por encima del enlace
+    }
+}
+
+.link-sin-decoracion {
+    text-decoration: none; // Elimina el subrayado del enlace
+    color: inherit; // Utiliza el color del texto actual
+    cursor: pointer; // Cambia el cursor a una mano
+}
+
+
+#TextoImportante {
+    font-weight: bold; // Establece el peso de la fuente en negrita
+    color: $color3; // Color del texto importante
+}
+
+// Tipografías
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; // Fuente utilizada para el cuerpo del texto
+    overflow-x: hidden; // Evita la barra de desplazamiento horizontal en el cuerpo de la página
+}
+
+// Navbar Menu
+#menu {
+    a {
+        color: #000; // Color del texto de los enlaces del menú
+        text-decoration: none; // Elimina el subrayado de los enlaces del menú
+        font-size: 16px; // Tamaño de fuente de los enlaces del menú
+        font-weight: bold; // Establece el peso de la fuente en negrita para los enlaces del menú
+    }
+
+    button {
+        font-size: 16px; // Tamaño de fuente de los botones del menú
+        font-weight: bold; // Establece el peso de la fuente en negrita para los botones del menú
+    }
+}
+
+// Tamaño multimedia
+#imagenes-servicios1, #imagenes-servicios2, #imagenes-servicios3, #imagenes-servicios4, #redInstagram, #redLinkedin, #redYoutube, #redSpotify { 
+    width: 100% !important; // Ancho del elemento multimedia al 100%
+    text-align: center; // Alineación del texto en el centro
+}
+
+// Contacto
+#contenedor-formulario {
+    background: $color1; // Color de fondo del contenedor del formulario
+    border-radius: 5px; // Radio de borde del contenedor del formulario
+    padding-top: 10px; // Espacio superior de relleno del contenedor del formulario
+    padding-bottom: 10px; // Espacio inferior de relleno del contenedor del formulario
+    max-width: 500px; // Ancho máximo del contenedor del formulario
+}
+
+#titulo-formulario {
+    color: #fff; // Color del título del formulario
+}
+
+.btn {
+    background-color: $color3; // Color de fondo de los botones
+    color: #fff; // Color del texto de los botones
+    border-radius: 5px; // Radio de borde de los botones
+    border: none; // Borde de los botones
+    padding: 10px; // Relleno de los botones
+    font-size: 16px; // Tamaño de fuente de los botones
+    font-weight: bold; // Establece el peso de la fuente en negrita para los botones
+}
+
+.btn:hover {
+    background-color: #a04b4b !important; // Color de fondo de los botones al pasar el cursor (efecto hover)
+}
+
+.btn:active {
+    background-color: $color3 !important; // Color de fondo de los botones al hacer clic (efecto active)
+}
+
+
+
+#iconos i {
+    font-size: 26px; // Tamaño de fuente de los iconos
+    color: #000; // Color de los iconos
+    padding: 0 8px; // Espacio de relleno horizontal para los iconos
+}
+
+
+
+// =============Animaciones=============
+
+@keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulsate-bck {
+    animation: pulsate-bck 2s ease-in-out infinite both;
+  }

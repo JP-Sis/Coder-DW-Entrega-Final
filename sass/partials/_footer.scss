@@ -1,0 +1,17 @@
+/* Estilo de Footer */
+footer {
+    background-color: $color2; // Color de fondo del pie de página
+}
+
+// Footer
+footer {
+    background-color: $color2; // Color de fondo del pie de página
+    min-height: 100px; // Altura mínima del pie de página
+    text-align: center; // Alineación del texto en el centro
+    padding: 20px; // Relleno del pie de página
+    p {
+        font-size: 12px; // Tamaño de fuente del texto del pie de página
+        color: #000; // Color del texto del pie de página
+    }
+
+}

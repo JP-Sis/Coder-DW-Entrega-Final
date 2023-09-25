@@ -1,0 +1,15 @@
+/* Media Queries */
+// Media Queries Pantalla SM
+@media (max-width: 768px) {
+    #intro, #SobreFluna {
+        width: 90% !important; // Ancho del contenido en pantallas pequeñas
+    }
+}
+
+// Media Queries Pantalla Extra SM
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap !important; // Cambia el comportamiento de flexbox a envolver en pantallas muy pequeñas
+        justify-content: center !important; // Centra los elementos en pantallas muy pequeñas
+    }
+}
